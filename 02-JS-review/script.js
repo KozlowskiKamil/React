@@ -144,7 +144,7 @@ function getBook(id) {
 }
 
 //Destrcuturing
-const book = getBook(1);
+const book = getBook(2);
 book;
 
 // const title = book.title;
@@ -181,3 +181,20 @@ sumary;
 
 const oagesRange = pages > 1000 ? "over a 1000" : "less then 1000";
 oagesRange;
+
+// function getYear(str) {
+//   return str.split("-")[0];
+// }
+
+const getYear = (str) => str.split("-")[0];
+console.log(getYear(publicationDate));
+
+console.log(true && "Some string");
+console.log(false && "some string");
+console.log(hasMovieAdaptation && "Has movie");
+console.log(book.translations.spanish);
+
+const spanishTransl = book.translations.spanish || "Not trans";
+spanishTransl;
+
+console.log(book.reviews.librarything.reviewsCount);
